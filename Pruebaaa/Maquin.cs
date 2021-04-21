@@ -115,7 +115,7 @@ namespace Pruebaaa
         private void BUSCUSER_KeyUp(object sender, KeyEventArgs e)
         {
 
-
+            string prueba = "probando";
 
 
 
