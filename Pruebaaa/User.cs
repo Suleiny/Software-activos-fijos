@@ -358,29 +358,59 @@ namespace Pruebaaa
 
         }
 
-        SqlConnection Conexion = new SqlConnection("Data Source=DESKTOP-GAB0UPU;Initial Catalog=Afijos;Integrated Security=True");
+        /*SqlConnection Conexion = new SqlConnection("Data Source=DESKTOP-GAB0UPU;Initial Catalog=Afijos;Integrated Security=True");*/
+
+        private void btnbusc_Click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            cedula = BUSCUSER.Text;
+            dataGridView1.DataSource = dat.BUSCARUSERC(cedula);
+
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            nombre = BUSCUSER.Text;
+            dataGridView1.DataSource = dat.BUSCARUSER(nombre);
+        }
+
+        private void BUSCUSER_TextChanged_1(object sender, EventArgs e)
+        {
+
+
+            nombre = empnombre.Text;
+
+
+
+            /*Conexion.Open();
+
+            SqlCommand command = Conexion.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = $"SELECT * FROM USUARIO WHERE nombre_usuario";
+            command.ExecuteNonQuery(); 
+            DataTable table = new DataTable();
+            SqlDataAdapter adap = new SqlDataAdapter(command);
+        
+            adap.Fill(table);
+            dataGridView1.DataSource = adap;
+
+
+            Conexion.Close();
+
+            dataGridView1.DataSource = dat.DATOSUSUARIOS();*/
+        }
+
+      
 
 
         private void BUSCUSER_KeyUp(object sender, KeyEventArgs e)
         {
 
-          
-            Conexion.Open();
-
-            SqlCommand command = Conexion.CreateCommand();
-            command.CommandType = CommandType.Text;
-            command.CommandText = "SELECT*FROM USUARIO WHERE nombre_usuario  LIKE  ('" + BUSCUSER.Text + "%' )";
-            command.ExecuteNonQuery();
-
-            DataTable table = new DataTable();
-            SqlDataAdapter adap = new SqlDataAdapter(command);
-            adap.Fill(table);
-            dataGridView1.DataSource = adap;
-
-            Conexion.Close();
-
-
-            dataGridView1.DataSource = dat.DATOSUSUARIOS();
+  
 
 
         }

@@ -231,6 +231,12 @@ namespace Pruebaaa
             dataGridView1.DataSource = dat.BUSCARMATRICULA(matricula);
         }
 
+        private void VehiculoCodigo_Click(object sender, EventArgs e)
+        {
+            codigo = BUSCUSER.Text;
+            dataGridView1.DataSource = dat.BUSCARVEHICODIGO(codigo);
+        }
+
         private void BUSCUSER_TextChanged(object sender, EventArgs e)
         {
 

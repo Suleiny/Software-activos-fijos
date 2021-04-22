@@ -183,12 +183,26 @@ namespace Pruebaaa
         }
 
 
-
+   
         public void EDITCASA(string catas, string met, string ubiccacion, string cantidad, string valori, string valrf, string fecha, string deu, string propie, string titulo)
         {
 
             Conexion.Open();
-            string datcomand = $"update CARROS set('{catas}','{met}','{ubiccacion}','{cantidad}','{valori}','{valrf}','{fecha}','{deu}','{propie}','{titulo}')";
+            string datcomand = $"update CARROS metros_casa ='{met}',ubicacion_casa ='{ubiccacion}',cantidad_casa = '{cantidad}', ValorInicial ='{valori}', ValorFinal= '{valrf}', fecha_ingreso ='{fecha}', Deuda_casa ='{deu}',propietario_casa ='{propie}', TitPr_activo_activo= '{titulo} where set catastro_casa =('{catas}'')";
+            comandos = new SqlCommand(datcomand, Conexion);
+            comandos.ExecuteNonQuery();
+            Conexion.Close();
+        }
+
+  
+	
+
+        public void EDITEDIFICACION(string catast, string metr, string ubic, string cantid, string val1, string val2, string fech, string deud, string due, string titl)
+        {
+            Conexion.Open();
+
+            string datcomand = $"update CARROS metros_E ='{metr}',ubicacion_E ='{ubic}',cantidad_E] = '{cantid}', ValorInicial_E ='{val1}', ValorFinal_E = '{val2}', fechai_E ='{fech}', Deuda_E ='{deud}',propietario_E ='{due}', TitPr_activo_E= '{titl} where set catastro_casa =('{catast}'')";
+              
             comandos = new SqlCommand(datcomand, Conexion);
             comandos.ExecuteNonQuery();
             Conexion.Close();
@@ -253,9 +267,9 @@ namespace Pruebaaa
 
         public void DELETEEDIFICACION( string catastroe)
         {
-
+            Conexion.Open();
             string datcomand = $"DELETE FROM  EDIFICACION WHERE catastro_E ='{catastroe}'";
-            comandos = new SqlCommand(datcomand, Conexion);
+            comandos = new SqlCommand(datcomand, Conexion);;
             comandos.ExecuteNonQuery();
             Conexion.Close();
         }
@@ -263,7 +277,7 @@ namespace Pruebaaa
 
         public void DELETEMAQUINA(string Codigo)
         {
-
+            Conexion.Open();
             string datcomand = $"DELETE FROM  MAQUINARIAS WHERE codigo_pc ='{Codigo}'";
             comandos = new SqlCommand(datcomand, Conexion);
             comandos.ExecuteNonQuery();
@@ -288,7 +302,7 @@ namespace Pruebaaa
         {
 
            Conexion.Open();
-            string datcomand = $"SELECT * FROM CARROS where Matricula ='{matricula}'";
+            string datcomand = $"Select* from CARROS where Matricula ='{matricula}'";
             comandos = new SqlCommand(datcomand, Conexion);
             SqlDataAdapter data = new SqlDataAdapter(comandos);
             DataTable table = new DataTable();
@@ -301,7 +315,37 @@ namespace Pruebaaa
 
         public DataTable MAQMODELO(string modelo)
         {
+            Conexion.Open();
             string datcomand = $"Select * from MAQUINARIA where modelo '{modelo}'";
+            comandos = new SqlCommand(datcomand, Conexion);
+            SqlDataAdapter data = new SqlDataAdapter(comandos);
+            DataTable table = new DataTable();
+            data.Fill(table);
+            Conexion.Close();
+            return table;
+        }
+
+
+        public DataTable BUSCARUSER(string nombre)
+        {
+
+            Conexion.Open();
+            string datcomand = $"select* from USUARIO where nombre_usuario ='{nombre}'";
+            comandos = new SqlCommand(datcomand, Conexion);
+            SqlDataAdapter data = new SqlDataAdapter(comandos);
+            DataTable table = new DataTable();
+            data.Fill(table);
+            Conexion.Close();
+            return table;
+        }
+
+
+
+        public DataTable BUSCARUSERC(string cedula)
+        {
+
+            Conexion.Open();
+            string datcomand = $"select* from USUARIO where cedula_usuario='{cedula}'";
             comandos = new SqlCommand(datcomand, Conexion);
             SqlDataAdapter data = new SqlDataAdapter(comandos);
             DataTable table = new DataTable();
@@ -314,10 +358,85 @@ namespace Pruebaaa
 
 
 
+        public DataTable BUSCARMAQM(string marca)
+        {
+
+            Conexion.Open();
+            string datcomand = $"select* from MAQUINARIAS where marca ='{marca}'";
+            comandos = new SqlCommand(datcomand, Conexion);
+            SqlDataAdapter data = new SqlDataAdapter(comandos);
+            DataTable table = new DataTable();
+            data.Fill(table);
+            Conexion.Close();
+            return table;
+        }
+
+        public DataTable BUSCARMAQC(string codigo)
+        {
+
+            Conexion.Open();
+            string datcomand = $"select* from MAQUINARIAS where codigo ='{codigo}'";
+            comandos = new SqlCommand(datcomand, Conexion);
+            SqlDataAdapter data = new SqlDataAdapter(comandos);
+            DataTable table = new DataTable();
+            data.Fill(table);
+            Conexion.Close();
+            return table;
+        }
+
+        public DataTable BUSCARMAQMO(string model)
+        {
+
+            Conexion.Open();
+            string datcomand = $"select* from MAQUINARIAS where modelo ='{model}'";
+            comandos = new SqlCommand(datcomand, Conexion);
+            SqlDataAdapter data = new SqlDataAdapter(comandos);
+            DataTable table = new DataTable();
+            data.Fill(table);
+            Conexion.Close();
+            return table;
+        }
+
+        public DataTable BUSCARVEHICODIGO(string codigo)
+        {
+
+            Conexion.Open();
+            string datcomand = $"select* from CARROS where modelo ='{codigo}'";
+            comandos = new SqlCommand(datcomand, Conexion);
+            SqlDataAdapter data = new SqlDataAdapter(comandos);
+            DataTable table = new DataTable();
+            data.Fill(table);
+            Conexion.Close();
+            return table;
+        }
+
+        public DataTable BUSCARTERRENO(string cat)
+        {
+
+            Conexion.Open();
+            string datcomand = $"Select*from EDIFICACION where catastro_E ='{cat}'";
+            comandos = new SqlCommand(datcomand, Conexion);
+            SqlDataAdapter data = new SqlDataAdapter(comandos);
+            DataTable table = new DataTable();
+            data.Fill(table);
+            Conexion.Close();
+            return table;
+        }
 
 
 
+        public DataTable PROPIETARIOE(string propietario)
+        {
 
+            Conexion.Open();
+            string datcomand = $"Select*from EDIFICACION where propietario_E ='{propietario}'";
+            comandos = new SqlCommand(datcomand, Conexion);
+            SqlDataAdapter data = new SqlDataAdapter(comandos);
+            DataTable table = new DataTable();
+            data.Fill(table);
+            Conexion.Close();
+            return table;
+        }
 
 
 

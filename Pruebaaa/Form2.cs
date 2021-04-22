@@ -95,8 +95,7 @@ namespace Pruebaaa
 
         private void boton3_Click(object sender, EventArgs e)
         {
-            Form formulario = new Buscar();
-            formulario.Show();
+         
         }
 
         private void Usuarios_Click(object sender, EventArgs e)

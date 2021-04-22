@@ -29,6 +29,7 @@ namespace Pruebaaa
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Maquinarias));
             this.datos = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -55,11 +56,13 @@ namespace Pruebaaa
             this.bucodigo = new Guna.UI2.WinForms.Guna2Button();
             this.bucmarca = new Guna.UI2.WinForms.Guna2Button();
             this.bumodelo = new Guna.UI2.WinForms.Guna2Button();
+            this.error = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
             this.SuspendLayout();
             // 
             // datos
@@ -68,7 +71,7 @@ namespace Pruebaaa
             this.datos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(79)))), ((int)(((byte)(114)))));
             this.datos.Font = new System.Drawing.Font("Times New Roman", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.datos.ForeColor = System.Drawing.Color.Cornsilk;
-            this.datos.Location = new System.Drawing.Point(2, 391);
+            this.datos.Location = new System.Drawing.Point(2, 480);
             this.datos.Name = "datos";
             this.datos.Size = new System.Drawing.Size(204, 30);
             this.datos.TabIndex = 37;
@@ -120,10 +123,10 @@ namespace Pruebaaa
             this.guna2Panel1.Controls.Add(this.mayeard);
             this.guna2Panel1.Controls.Add(this.mamodelo);
             this.guna2Panel1.Controls.Add(this.macodigo);
-            this.guna2Panel1.Location = new System.Drawing.Point(323, 12);
+            this.guna2Panel1.Location = new System.Drawing.Point(354, 12);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(808, 437);
+            this.guna2Panel1.Size = new System.Drawing.Size(886, 437);
             this.guna2Panel1.TabIndex = 33;
             // 
             // mapropietarios
@@ -178,6 +181,7 @@ namespace Pruebaaa
             this.mMarca.Size = new System.Drawing.Size(256, 48);
             this.mMarca.TabIndex = 5;
             this.mMarca.TextChanged += new System.EventHandler(this.carMarca_TextChanged);
+            this.mMarca.Validated += new System.EventHandler(this.mMarca_Validated);
             // 
             // guna2ImageButton2
             // 
@@ -193,6 +197,7 @@ namespace Pruebaaa
             this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
             this.guna2ImageButton2.Size = new System.Drawing.Size(68, 73);
             this.guna2ImageButton2.TabIndex = 47;
+            this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
             // 
             // guna2ImageButton4
             // 
@@ -329,6 +334,7 @@ namespace Pruebaaa
             this.mavalor1.ShadowDecoration.Parent = this.mavalor1;
             this.mavalor1.Size = new System.Drawing.Size(255, 46);
             this.mavalor1.TabIndex = 4;
+            this.mavalor1.Validated += new System.EventHandler(this.mavalor1_Validated);
             // 
             // mayeard
             // 
@@ -355,6 +361,7 @@ namespace Pruebaaa
             this.mayeard.ShadowDecoration.Parent = this.mayeard;
             this.mayeard.Size = new System.Drawing.Size(256, 48);
             this.mayeard.TabIndex = 3;
+            this.mayeard.Validated += new System.EventHandler(this.mayeard_Validated);
             // 
             // mamodelo
             // 
@@ -382,6 +389,7 @@ namespace Pruebaaa
             this.mamodelo.Size = new System.Drawing.Size(256, 48);
             this.mamodelo.TabIndex = 2;
             this.mamodelo.TextChanged += new System.EventHandler(this.carmodelo_TextChanged);
+            this.mamodelo.Validated += new System.EventHandler(this.mamodelo_Validated);
             // 
             // macodigo
             // 
@@ -408,6 +416,7 @@ namespace Pruebaaa
             this.macodigo.ShadowDecoration.Parent = this.macodigo;
             this.macodigo.Size = new System.Drawing.Size(255, 46);
             this.macodigo.TabIndex = 1;
+            this.macodigo.Validated += new System.EventHandler(this.macodigo_Validated);
             // 
             // guna2ImageButton3
             // 
@@ -428,7 +437,7 @@ namespace Pruebaaa
             // guna2CirclePictureBox7
             // 
             this.guna2CirclePictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox7.Image")));
-            this.guna2CirclePictureBox7.Location = new System.Drawing.Point(28, 68);
+            this.guna2CirclePictureBox7.Location = new System.Drawing.Point(89, 60);
             this.guna2CirclePictureBox7.Name = "guna2CirclePictureBox7";
             this.guna2CirclePictureBox7.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox7.ShadowDecoration.Parent = this.guna2CirclePictureBox7;
@@ -441,7 +450,7 @@ namespace Pruebaaa
             // 
             this.labnombE.AutoSize = true;
             this.labnombE.Font = new System.Drawing.Font("Times New Roman", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.labnombE.Location = new System.Drawing.Point(0, 265);
+            this.labnombE.Location = new System.Drawing.Point(59, 265);
             this.labnombE.Name = "labnombE";
             this.labnombE.Size = new System.Drawing.Size(229, 39);
             this.labnombE.TabIndex = 46;
@@ -474,7 +483,7 @@ namespace Pruebaaa
             this.BUSCUSER.ForeColor = System.Drawing.Color.Black;
             this.BUSCUSER.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.BUSCUSER.HoverState.Parent = this.BUSCUSER;
-            this.BUSCUSER.Location = new System.Drawing.Point(7, 461);
+            this.BUSCUSER.Location = new System.Drawing.Point(248, 464);
             this.BUSCUSER.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BUSCUSER.Name = "BUSCUSER";
             this.BUSCUSER.PasswordChar = '\0';
@@ -483,6 +492,7 @@ namespace Pruebaaa
             this.BUSCUSER.ShadowDecoration.Parent = this.BUSCUSER;
             this.BUSCUSER.Size = new System.Drawing.Size(517, 46);
             this.BUSCUSER.TabIndex = 49;
+            this.BUSCUSER.TextChanged += new System.EventHandler(this.BUSCUSER_TextChanged);
             this.BUSCUSER.KeyUp += new System.Windows.Forms.KeyEventHandler(this.BUSCUSER_KeyUp);
             // 
             // btnpdf
@@ -522,6 +532,7 @@ namespace Pruebaaa
             this.bucodigo.Size = new System.Drawing.Size(207, 50);
             this.bucodigo.TabIndex = 53;
             this.bucodigo.Text = "Codigo";
+            this.bucodigo.Click += new System.EventHandler(this.bucodigo_Click);
             // 
             // bucmarca
             // 
@@ -541,6 +552,7 @@ namespace Pruebaaa
             this.bucmarca.Size = new System.Drawing.Size(207, 50);
             this.bucmarca.TabIndex = 54;
             this.bucmarca.Text = "Marca";
+            this.bucmarca.Click += new System.EventHandler(this.bucmarca_Click);
             // 
             // bumodelo
             // 
@@ -560,6 +572,11 @@ namespace Pruebaaa
             this.bumodelo.Size = new System.Drawing.Size(207, 50);
             this.bumodelo.TabIndex = 55;
             this.bumodelo.Text = "Modelo";
+            this.bumodelo.Click += new System.EventHandler(this.bumodelo_Click_1);
+            // 
+            // error
+            // 
+            this.error.ContainerControl = this;
             // 
             // Maquinarias
             // 
@@ -586,6 +603,7 @@ namespace Pruebaaa
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -618,5 +636,6 @@ namespace Pruebaaa
         private Guna.UI2.WinForms.Guna2Button bucodigo;
         private Guna.UI2.WinForms.Guna2Button bucmarca;
         private Guna.UI2.WinForms.Guna2Button bumodelo;
+        private System.Windows.Forms.ErrorProvider error;
     }
 }

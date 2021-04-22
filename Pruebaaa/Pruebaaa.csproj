@@ -63,12 +63,6 @@
     <Compile Include="ayuda.Designer.cs">
       <DependentUpon>ayuda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Buscar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Buscar.Designer.cs">
-      <DependentUpon>Buscar.cs</DependentUpon>
-    </Compile>
     <Compile Include="Almacenamiento\Datos.cs" />
     <Compile Include="Edificio.cs">
       <SubType>Form</SubType>
@@ -154,9 +148,6 @@
     <EmbeddedResource Include="ayuda.resx">
       <DependentUpon>ayuda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Buscar.resx">
-      <DependentUpon>Buscar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Edificio.resx">
       <DependentUpon>Edificio.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +180,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Propiedad5.resx">
       <DependentUpon>Propiedad5.cs</DependentUpon>
@@ -218,6 +210,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_locate_find_icon-icons.com_67287.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder-search-4341327_120553.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder-search-4341327_1205531.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

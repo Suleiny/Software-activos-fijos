@@ -31,14 +31,15 @@ namespace Pruebaaa
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtmatricula = new Guna.UI2.WinForms.Guna2TextBox();
+            this.labregi = new System.Windows.Forms.Label();
             this.guna2ImageButton4 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.carpropietarios = new Guna.UI2.WinForms.Guna2TextBox();
             this.carMarca = new Guna.UI2.WinForms.Guna2TextBox();
@@ -49,20 +50,18 @@ namespace Pruebaaa
             this.caryeard = new Guna.UI2.WinForms.Guna2TextBox();
             this.carmodelo = new Guna.UI2.WinForms.Guna2TextBox();
             this.carcodigo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.datos = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.error = new System.Windows.Forms.ErrorProvider(this.components);
-            this.labregi = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox7 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.labnombE = new System.Windows.Forms.Label();
-            this.radiocod = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.radiomatri = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.radiomod = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.radfecha = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.txtmatricula = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnpdf = new Guna.UI2.WinForms.Guna2Button();
             this.BUSCUSER = new Guna.UI2.WinForms.Guna2TextBox();
+            this.VehiculoCodigo = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -109,6 +108,42 @@ namespace Pruebaaa
             this.guna2Panel1.Size = new System.Drawing.Size(1123, 381);
             this.guna2Panel1.TabIndex = 27;
             // 
+            // txtmatricula
+            // 
+            this.txtmatricula.BorderRadius = 5;
+            this.txtmatricula.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtmatricula.DefaultText = "";
+            this.txtmatricula.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtmatricula.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtmatricula.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtmatricula.DisabledState.Parent = this.txtmatricula;
+            this.txtmatricula.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtmatricula.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtmatricula.FocusedState.Parent = this.txtmatricula;
+            this.txtmatricula.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmatricula.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtmatricula.HoverState.Parent = this.txtmatricula;
+            this.txtmatricula.Location = new System.Drawing.Point(305, 70);
+            this.txtmatricula.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtmatricula.Name = "txtmatricula";
+            this.txtmatricula.PasswordChar = '\0';
+            this.txtmatricula.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtmatricula.PlaceholderText = "Matricula";
+            this.txtmatricula.SelectedText = "";
+            this.txtmatricula.ShadowDecoration.Parent = this.txtmatricula;
+            this.txtmatricula.Size = new System.Drawing.Size(256, 48);
+            this.txtmatricula.TabIndex = 47;
+            // 
+            // labregi
+            // 
+            this.labregi.AutoSize = true;
+            this.labregi.Font = new System.Drawing.Font("Times New Roman", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labregi.Location = new System.Drawing.Point(386, 7);
+            this.labregi.Name = "labregi";
+            this.labregi.Size = new System.Drawing.Size(261, 32);
+            this.labregi.TabIndex = 43;
+            this.labregi.Text = "Registro de Vehiculos";
+            // 
             // guna2ImageButton4
             // 
             this.guna2ImageButton4.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
@@ -140,22 +175,6 @@ namespace Pruebaaa
             this.guna2ImageButton2.Size = new System.Drawing.Size(68, 73);
             this.guna2ImageButton2.TabIndex = 44;
             this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
-            // 
-            // guna2ImageButton3
-            // 
-            this.guna2ImageButton3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton3.CheckedState.Parent = this.guna2ImageButton3;
-            this.guna2ImageButton3.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton3.HoverState.Parent = this.guna2ImageButton3;
-            this.guna2ImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.Image")));
-            this.guna2ImageButton3.ImageRotate = 0F;
-            this.guna2ImageButton3.Location = new System.Drawing.Point(12, -4);
-            this.guna2ImageButton3.Name = "guna2ImageButton3";
-            this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton3.PressedState.Parent = this.guna2ImageButton3;
-            this.guna2ImageButton3.Size = new System.Drawing.Size(53, 55);
-            this.guna2ImageButton3.TabIndex = 37;
-            this.guna2ImageButton3.Click += new System.EventHandler(this.guna2ImageButton3_Click);
             // 
             // guna2ImageButton1
             // 
@@ -416,6 +435,22 @@ namespace Pruebaaa
             this.carcodigo.TabIndex = 1;
             this.carcodigo.Validated += new System.EventHandler(this.carcodigo_Validated);
             // 
+            // guna2ImageButton3
+            // 
+            this.guna2ImageButton3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton3.CheckedState.Parent = this.guna2ImageButton3;
+            this.guna2ImageButton3.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton3.HoverState.Parent = this.guna2ImageButton3;
+            this.guna2ImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.Image")));
+            this.guna2ImageButton3.ImageRotate = 0F;
+            this.guna2ImageButton3.Location = new System.Drawing.Point(12, -4);
+            this.guna2ImageButton3.Name = "guna2ImageButton3";
+            this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton3.PressedState.Parent = this.guna2ImageButton3;
+            this.guna2ImageButton3.Size = new System.Drawing.Size(53, 55);
+            this.guna2ImageButton3.TabIndex = 37;
+            this.guna2ImageButton3.Click += new System.EventHandler(this.guna2ImageButton3_Click);
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -447,53 +482,43 @@ namespace Pruebaaa
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Times New Roman", 7.8F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 7.8F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(183)))), ((int)(((byte)(77)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridView1.Location = new System.Drawing.Point(236, 465);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(183)))), ((int)(((byte)(77)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Location = new System.Drawing.Point(217, 465);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(183)))), ((int)(((byte)(77)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(183)))), ((int)(((byte)(77)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1210, 344);
+            this.dataGridView1.Size = new System.Drawing.Size(1036, 344);
             this.dataGridView1.TabIndex = 42;
             // 
             // error
             // 
             this.error.ContainerControl = this;
-            // 
-            // labregi
-            // 
-            this.labregi.AutoSize = true;
-            this.labregi.Font = new System.Drawing.Font("Times New Roman", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labregi.Location = new System.Drawing.Point(386, 7);
-            this.labregi.Name = "labregi";
-            this.labregi.Size = new System.Drawing.Size(261, 32);
-            this.labregi.TabIndex = 43;
-            this.labregi.Text = "Registro de Vehiculos";
             // 
             // guna2CirclePictureBox7
             // 
@@ -518,110 +543,6 @@ namespace Pruebaaa
             this.labnombE.Text = "A & N Finanzas ";
             this.labnombE.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // radiocod
-            // 
-            this.radiocod.AutoSize = true;
-            this.radiocod.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.radiocod.CheckedState.BorderThickness = 0;
-            this.radiocod.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.radiocod.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.radiocod.CheckedState.InnerOffset = -4;
-            this.radiocod.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiocod.Location = new System.Drawing.Point(687, 419);
-            this.radiocod.Name = "radiocod";
-            this.radiocod.Size = new System.Drawing.Size(90, 27);
-            this.radiocod.TabIndex = 50;
-            this.radiocod.Text = "Codigo";
-            this.radiocod.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.radiocod.UncheckedState.BorderThickness = 2;
-            this.radiocod.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.radiocod.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // radiomatri
-            // 
-            this.radiomatri.AutoSize = true;
-            this.radiomatri.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.radiomatri.CheckedState.BorderThickness = 0;
-            this.radiomatri.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.radiomatri.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.radiomatri.CheckedState.InnerOffset = -4;
-            this.radiomatri.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiomatri.Location = new System.Drawing.Point(834, 419);
-            this.radiomatri.Name = "radiomatri";
-            this.radiomatri.Size = new System.Drawing.Size(113, 27);
-            this.radiomatri.TabIndex = 51;
-            this.radiomatri.Text = "Matricula";
-            this.radiomatri.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.radiomatri.UncheckedState.BorderThickness = 2;
-            this.radiomatri.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.radiomatri.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.radiomatri.CheckedChanged += new System.EventHandler(this.radiomatri_CheckedChanged);
-            this.radiomatri.Click += new System.EventHandler(this.radiomatri_Click);
-            // 
-            // radiomod
-            // 
-            this.radiomod.AutoSize = true;
-            this.radiomod.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.radiomod.CheckedState.BorderThickness = 0;
-            this.radiomod.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.radiomod.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.radiomod.CheckedState.InnerOffset = -4;
-            this.radiomod.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiomod.Location = new System.Drawing.Point(1015, 419);
-            this.radiomod.Name = "radiomod";
-            this.radiomod.Size = new System.Drawing.Size(94, 27);
-            this.radiomod.TabIndex = 52;
-            this.radiomod.Text = "Modelo";
-            this.radiomod.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.radiomod.UncheckedState.BorderThickness = 2;
-            this.radiomod.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.radiomod.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // radfecha
-            // 
-            this.radfecha.AutoSize = true;
-            this.radfecha.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.radfecha.CheckedState.BorderThickness = 0;
-            this.radfecha.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.radfecha.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.radfecha.CheckedState.InnerOffset = -4;
-            this.radfecha.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radfecha.Location = new System.Drawing.Point(1139, 419);
-            this.radfecha.Name = "radfecha";
-            this.radfecha.Size = new System.Drawing.Size(81, 27);
-            this.radfecha.TabIndex = 53;
-            this.radfecha.Text = "Fecha";
-            this.radfecha.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.radfecha.UncheckedState.BorderThickness = 2;
-            this.radfecha.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.radfecha.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // txtmatricula
-            // 
-            this.txtmatricula.BorderRadius = 5;
-            this.txtmatricula.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtmatricula.DefaultText = "";
-            this.txtmatricula.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtmatricula.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtmatricula.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtmatricula.DisabledState.Parent = this.txtmatricula;
-            this.txtmatricula.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtmatricula.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtmatricula.FocusedState.Parent = this.txtmatricula;
-            this.txtmatricula.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmatricula.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtmatricula.HoverState.Parent = this.txtmatricula;
-            this.txtmatricula.Location = new System.Drawing.Point(305, 70);
-            this.txtmatricula.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtmatricula.Name = "txtmatricula";
-            this.txtmatricula.PasswordChar = '\0';
-            this.txtmatricula.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtmatricula.PlaceholderText = "Matricula";
-            this.txtmatricula.SelectedText = "";
-            this.txtmatricula.ShadowDecoration.Parent = this.txtmatricula;
-            this.txtmatricula.Size = new System.Drawing.Size(256, 48);
-            this.txtmatricula.TabIndex = 47;
-            // 
             // btnpdf
             // 
             this.btnpdf.BorderRadius = 5;
@@ -634,10 +555,10 @@ namespace Pruebaaa
             this.btnpdf.Image = ((System.Drawing.Image)(resources.GetObject("btnpdf.Image")));
             this.btnpdf.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnpdf.ImageSize = new System.Drawing.Size(45, 45);
-            this.btnpdf.Location = new System.Drawing.Point(1239, 409);
+            this.btnpdf.Location = new System.Drawing.Point(1261, 750);
             this.btnpdf.Name = "btnpdf";
             this.btnpdf.ShadowDecoration.Parent = this.btnpdf;
-            this.btnpdf.Size = new System.Drawing.Size(207, 50);
+            this.btnpdf.Size = new System.Drawing.Size(185, 50);
             this.btnpdf.TabIndex = 48;
             this.btnpdf.Text = "Export PDF";
             // 
@@ -657,16 +578,74 @@ namespace Pruebaaa
             this.BUSCUSER.ForeColor = System.Drawing.Color.Black;
             this.BUSCUSER.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.BUSCUSER.HoverState.Parent = this.BUSCUSER;
-            this.BUSCUSER.Location = new System.Drawing.Point(236, 413);
+            this.BUSCUSER.Location = new System.Drawing.Point(217, 413);
             this.BUSCUSER.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BUSCUSER.Name = "BUSCUSER";
             this.BUSCUSER.PasswordChar = '\0';
             this.BUSCUSER.PlaceholderText = "Ingresar Busquedad";
             this.BUSCUSER.SelectedText = "";
             this.BUSCUSER.ShadowDecoration.Parent = this.BUSCUSER;
-            this.BUSCUSER.Size = new System.Drawing.Size(433, 46);
+            this.BUSCUSER.Size = new System.Drawing.Size(523, 46);
             this.BUSCUSER.TabIndex = 41;
             this.BUSCUSER.TextChanged += new System.EventHandler(this.BUSCUSER_TextChanged);
+            // 
+            // VehiculoCodigo
+            // 
+            this.VehiculoCodigo.BorderRadius = 5;
+            this.VehiculoCodigo.CheckedState.Parent = this.VehiculoCodigo;
+            this.VehiculoCodigo.CustomImages.Parent = this.VehiculoCodigo;
+            this.VehiculoCodigo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(172)))), ((int)(((byte)(193)))));
+            this.VehiculoCodigo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VehiculoCodigo.ForeColor = System.Drawing.Color.White;
+            this.VehiculoCodigo.HoverState.Parent = this.VehiculoCodigo;
+            this.VehiculoCodigo.Image = ((System.Drawing.Image)(resources.GetObject("VehiculoCodigo.Image")));
+            this.VehiculoCodigo.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.VehiculoCodigo.ImageSize = new System.Drawing.Size(45, 45);
+            this.VehiculoCodigo.Location = new System.Drawing.Point(1261, 484);
+            this.VehiculoCodigo.Name = "VehiculoCodigo";
+            this.VehiculoCodigo.ShadowDecoration.Parent = this.VehiculoCodigo;
+            this.VehiculoCodigo.Size = new System.Drawing.Size(185, 50);
+            this.VehiculoCodigo.TabIndex = 49;
+            this.VehiculoCodigo.Text = "Codigo";
+            this.VehiculoCodigo.Click += new System.EventHandler(this.VehiculoCodigo_Click);
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.BorderRadius = 5;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(172)))), ((int)(((byte)(193)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
+            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button2.ImageSize = new System.Drawing.Size(45, 45);
+            this.guna2Button2.Location = new System.Drawing.Point(1261, 564);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(185, 50);
+            this.guna2Button2.TabIndex = 50;
+            this.guna2Button2.Text = "Matricula";
+            // 
+            // guna2Button3
+            // 
+            this.guna2Button3.BorderRadius = 5;
+            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
+            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
+            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(172)))), ((int)(((byte)(193)))));
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.HoverState.Parent = this.guna2Button3;
+            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
+            this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button3.ImageSize = new System.Drawing.Size(45, 45);
+            this.guna2Button3.Location = new System.Drawing.Point(1261, 654);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
+            this.guna2Button3.Size = new System.Drawing.Size(185, 50);
+            this.guna2Button3.TabIndex = 51;
+            this.guna2Button3.Text = "Modelo";
             // 
             // Form4
             // 
@@ -674,11 +653,10 @@ namespace Pruebaaa
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(79)))), ((int)(((byte)(114)))));
             this.ClientSize = new System.Drawing.Size(1458, 812);
+            this.Controls.Add(this.guna2Button3);
+            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.VehiculoCodigo);
             this.Controls.Add(this.btnpdf);
-            this.Controls.Add(this.radfecha);
-            this.Controls.Add(this.radiomod);
-            this.Controls.Add(this.radiomatri);
-            this.Controls.Add(this.radiocod);
             this.Controls.Add(this.guna2CirclePictureBox7);
             this.Controls.Add(this.labnombE);
             this.Controls.Add(this.dataGridView1);
@@ -725,11 +703,10 @@ namespace Pruebaaa
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox7;
         private System.Windows.Forms.Label labnombE;
         private Guna.UI2.WinForms.Guna2TextBox txtmatricula;
-        private Guna.UI2.WinForms.Guna2RadioButton radfecha;
-        private Guna.UI2.WinForms.Guna2RadioButton radiomod;
-        private Guna.UI2.WinForms.Guna2RadioButton radiomatri;
-        private Guna.UI2.WinForms.Guna2RadioButton radiocod;
         private Guna.UI2.WinForms.Guna2Button btnpdf;
         private Guna.UI2.WinForms.Guna2TextBox BUSCUSER;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button VehiculoCodigo;
     }
 }

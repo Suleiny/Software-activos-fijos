@@ -39,7 +39,6 @@ namespace Pruebaaa
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnintres = new Guna.UI2.WinForms.Guna2Button();
             this.btnempleado = new Guna.UI2.WinForms.Guna2Button();
-            this.btnbuscar = new Guna.UI2.WinForms.Guna2Button();
             this.btnactivos = new Guna.UI2.WinForms.Guna2Button();
             this.btnhome = new Guna.UI2.WinForms.Guna2Button();
             this.bienvenida = new System.Windows.Forms.Label();
@@ -97,7 +96,6 @@ namespace Pruebaaa
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel1.Controls.Add(this.btnintres);
             this.guna2Panel1.Controls.Add(this.btnempleado);
-            this.guna2Panel1.Controls.Add(this.btnbuscar);
             this.guna2Panel1.Controls.Add(this.btnactivos);
             this.guna2Panel1.Controls.Add(this.btnhome);
             this.guna2Panel1.Location = new System.Drawing.Point(1, 2);
@@ -111,11 +109,12 @@ namespace Pruebaaa
             // usuanombre
             // 
             this.usuanombre.AutoSize = true;
-            this.usuanombre.Location = new System.Drawing.Point(83, 156);
+            this.usuanombre.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usuanombre.Location = new System.Drawing.Point(25, 158);
             this.usuanombre.Name = "usuanombre";
-            this.usuanombre.Size = new System.Drawing.Size(46, 17);
+            this.usuanombre.Size = new System.Drawing.Size(174, 23);
             this.usuanombre.TabIndex = 15;
-            this.usuanombre.Text = "label5";
+            this.usuanombre.Text = "Audrey@gmail.com";
             // 
             // btnusuario
             // 
@@ -128,7 +127,7 @@ namespace Pruebaaa
             this.btnusuario.Image = ((System.Drawing.Image)(resources.GetObject("btnusuario.Image")));
             this.btnusuario.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnusuario.ImageSize = new System.Drawing.Size(45, 45);
-            this.btnusuario.Location = new System.Drawing.Point(0, 343);
+            this.btnusuario.Location = new System.Drawing.Point(3, 385);
             this.btnusuario.Name = "btnusuario";
             this.btnusuario.ShadowDecoration.Parent = this.btnusuario;
             this.btnusuario.Size = new System.Drawing.Size(219, 50);
@@ -166,7 +165,7 @@ namespace Pruebaaa
             this.btnreportes.Image = ((System.Drawing.Image)(resources.GetObject("btnreportes.Image")));
             this.btnreportes.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnreportes.ImageSize = new System.Drawing.Size(45, 45);
-            this.btnreportes.Location = new System.Drawing.Point(3, 542);
+            this.btnreportes.Location = new System.Drawing.Point(3, 532);
             this.btnreportes.Name = "btnreportes";
             this.btnreportes.ShadowDecoration.Parent = this.btnreportes;
             this.btnreportes.Size = new System.Drawing.Size(219, 50);
@@ -178,7 +177,7 @@ namespace Pruebaaa
             // 
             this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(79)))), ((int)(((byte)(114)))));
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(40, 3);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(38, 16);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
@@ -217,32 +216,13 @@ namespace Pruebaaa
             this.btnempleado.Image = ((System.Drawing.Image)(resources.GetObject("btnempleado.Image")));
             this.btnempleado.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnempleado.ImageSize = new System.Drawing.Size(45, 45);
-            this.btnempleado.Location = new System.Drawing.Point(3, 411);
+            this.btnempleado.Location = new System.Drawing.Point(3, 458);
             this.btnempleado.Name = "btnempleado";
             this.btnempleado.ShadowDecoration.Parent = this.btnempleado;
             this.btnempleado.Size = new System.Drawing.Size(219, 50);
             this.btnempleado.TabIndex = 5;
             this.btnempleado.Text = "Empleados";
             this.btnempleado.Click += new System.EventHandler(this.boton4_Click);
-            // 
-            // btnbuscar
-            // 
-            this.btnbuscar.BorderRadius = 5;
-            this.btnbuscar.CheckedState.Parent = this.btnbuscar;
-            this.btnbuscar.CustomImages.Parent = this.btnbuscar;
-            this.btnbuscar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnbuscar.ForeColor = System.Drawing.Color.White;
-            this.btnbuscar.HoverState.Parent = this.btnbuscar;
-            this.btnbuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnbuscar.Image")));
-            this.btnbuscar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnbuscar.ImageSize = new System.Drawing.Size(50, 45);
-            this.btnbuscar.Location = new System.Drawing.Point(3, 472);
-            this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.ShadowDecoration.Parent = this.btnbuscar;
-            this.btnbuscar.Size = new System.Drawing.Size(219, 50);
-            this.btnbuscar.TabIndex = 4;
-            this.btnbuscar.Text = "Buscar";
-            this.btnbuscar.Click += new System.EventHandler(this.boton3_Click);
             // 
             // btnactivos
             // 
@@ -255,7 +235,7 @@ namespace Pruebaaa
             this.btnactivos.Image = ((System.Drawing.Image)(resources.GetObject("btnactivos.Image")));
             this.btnactivos.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnactivos.ImageSize = new System.Drawing.Size(45, 45);
-            this.btnactivos.Location = new System.Drawing.Point(3, 270);
+            this.btnactivos.Location = new System.Drawing.Point(3, 314);
             this.btnactivos.Name = "btnactivos";
             this.btnactivos.ShadowDecoration.Parent = this.btnactivos;
             this.btnactivos.Size = new System.Drawing.Size(219, 50);
@@ -274,7 +254,7 @@ namespace Pruebaaa
             this.btnhome.Image = ((System.Drawing.Image)(resources.GetObject("btnhome.Image")));
             this.btnhome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnhome.ImageSize = new System.Drawing.Size(45, 45);
-            this.btnhome.Location = new System.Drawing.Point(3, 201);
+            this.btnhome.Location = new System.Drawing.Point(3, 239);
             this.btnhome.Name = "btnhome";
             this.btnhome.ShadowDecoration.Parent = this.btnhome;
             this.btnhome.Size = new System.Drawing.Size(219, 50);
@@ -676,7 +656,6 @@ namespace Pruebaaa
         private Guna.UI2.WinForms.Guna2Button btnhome;
         private Guna.UI2.WinForms.Guna2Button btnintres;
         private Guna.UI2.WinForms.Guna2Button btnempleado;
-        private Guna.UI2.WinForms.Guna2Button btnbuscar;
         private Guna.UI2.WinForms.Guna2Button btnactivos;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnreportes;
